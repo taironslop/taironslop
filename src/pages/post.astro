@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="posts | taironslop">
+  <nav>
+    <a href="/" class="nav-brand">taironslop</a>
+    <div class="nav-links">
+      <a href="/">home</a>
+      <a href="/post">post</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>posts</h1>
+    
+    <ul class="posts-list">
+      <li>
+        <a href="/post/getting-into-mobile-dev">
+          getting into mobile dev
+          <span class="date">2024-01-14</span>
+        </a>
+      </li>
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .nav-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-links a {
+    color: var(--text);
+    opacity: 0.8;
+  }
+
+  .nav-links a:hover {
+    opacity: 1;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--accent);
+  }
+
+  .posts-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .posts-list li {
+    margin-bottom: 1rem;
+  }
+
+  .posts-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 0;
+  }
+
+  .posts-list a:hover {
+    opacity: 0.8;
+  }
+
+  .date {
+    color: var(--text);
+    opacity: 0.6;
+    font-size: 0.9rem;
+  }
+</style> 
